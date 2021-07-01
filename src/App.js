@@ -9,7 +9,7 @@ function App() {
   const [gifsValue, updateGifs] = useState([]);
   
   useEffect(function (){
-   gifEffects({keyword: 'Panda'}).then(gifsValue => updateGifs(gifsValue))
+   gifEffects({keyword: 'shazam'}).then(gifsValue => updateGifs(gifsValue))
   }, []) 
 
   
@@ -17,8 +17,8 @@ function App() {
     <div className="App">
       <section className="App-content">
         {
-          gifsValue.map((useGifs, index) => <Gifs title={useGifs.title} url={useGifs.url} 
-          key={index}
+          gifsValue.map((useGifs) => <Gifs title={useGifs.title} url={useGifs.url} 
+          key={useGifs.id}
           
           
           />
