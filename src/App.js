@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Gifs from './gifComponents/Gifs';
-import gifEffects from './gifEffects/gifEffects';
+import gifEffects from './gifComponents/gifEffects';
 
 
 
@@ -9,17 +9,21 @@ function App() {
   const [gifsValue, updateGifs] = useState([]);
   
   useEffect(function (){
-   gifEffects().then(gifsValue => updateGifs(gifsValue))
+   gifEffects({keyword: 'Panda'}).then(gifsValue => updateGifs(gifsValue))
   }, []) 
+
   
   return (
     <div className="App">
       <section className="App-content">
         {
-          gifsValue.map(useGifs => <Gifs title={useGifs.title} URL={useGifs.URL} />
+          gifsValue.map((useGifs, index) => <Gifs title={useGifs.title} url={useGifs.url} 
+          key={index}
+          
+          
+          />
         
-            )
-        }  
+            )}  
         
         
       </section>

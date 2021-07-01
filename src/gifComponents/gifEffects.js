@@ -8,12 +8,13 @@ export default function gifEffects ({keyword = 'panda'} = {}) {
          .then(resp => resp.json())
            .then(respGif => {
              const {data} = respGif;
-             const gifsValue = data.map(image => {
-                 const {title, id, images} = image
-                 const {url} = images.downsized_medium
+             const gifsValues = data.map(image => {
+                
+                 const {title, id, images} = image  
+                 const {url} = images.original
                  return {title, id, url}
             })
-             return gifsValue
+            return gifsValues
            })
        
 

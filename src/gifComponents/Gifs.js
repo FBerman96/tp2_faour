@@ -1,10 +1,13 @@
 import React from 'react'
 
-export default function Gifs ({title, url}){
+export default function Gifs ({title, url, sGifs}){
+
+    console.log(url)
+    
     return (
         <div>
           <h4>{title}</h4>
-          <img src={url} />
+          <img alt={sGifs} src={url} />
         </div>
     )
 
