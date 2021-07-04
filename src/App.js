@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import Gifs from './gifComponents/Gifs';
 import gifEffects from './gifComponents/gifEffects';
 
 
