@@ -24,7 +24,7 @@ function App() {
         <TitleTP>Listado de GIFS</TitleTP>
       </div>
       <nav>
-        <Link to='http://localhost:3000/' className="a">Inicio</Link>
+        <Link to='https://tp2-faour.vercel.app/' className="a">Inicio</Link>
         <Link to='/Gifs/Angry Panda' className="b">El Panda</Link>
         <Link to='/Gifs/Matrix' className="c">Matrix</Link>
         <Link to='/Gifs/Maraton' className="d">Maraton</Link>
