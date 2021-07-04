@@ -17,4 +17,35 @@ button{
   color: white;
 }
 
+a{
+  color:rgb(14, 190, 167)
+}
 
+a:hover{
+  transition: 0.5s;
+  color:rgb(231, 0, 0)
+}
+
+link{
+  margin-top: 5em;
+}
+
+.Titulo{
+  margin-bottom: 5em;
+}
+
+.a{
+  margin:3px;
+}
+.b{
+  margin:3px;
+}
+.c{
+  margin:3px;
+}
+.d{
+  margin:3px;
+}
+.e{
+  margin:3px;
+}
