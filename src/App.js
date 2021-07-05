@@ -28,7 +28,7 @@ function App() {
         <Link to='/Gifs/Angry Panda' className="b">El Panda</Link>
         <Link to='/Gifs/Matrix' className="c">Matrix</Link>
         <Link to='/Gifs/Maraton' className="d">Maraton</Link>
-        <Link to='/Gifs/Pokemon' className="e">Pokemon</Link>
+        <Link to='/Gifs/Pokemon S' className="e">Pokemon</Link>
         <Link to='/Gifs/Angry Birds' className="f">Angry Birds</Link>
         <Route path="/Gifs/:keyword" component={GiffyList} />
       </nav>  
