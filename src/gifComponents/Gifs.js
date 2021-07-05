@@ -1,6 +1,5 @@
 import React from 'react'
 import './Gifs.css'
-//como llamo al ID de los gifs?
 
 
 export default function Gifs ({title, url, sGifs}){

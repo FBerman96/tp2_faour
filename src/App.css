@@ -49,3 +49,8 @@ link{
 .e{
   margin:3px;
 }
+
+input{
+  width: 20%;
+  text-decoration: darkolivegreen;
+}
